@@ -58,7 +58,9 @@
         <div class="skill-card">📱 Mobile First</div>
         <div class="skill-card">🚀 Landing Pages</div>
         <div class="skill-card">🔧 NoCode Tools</div>
+        <div class="skill-card">🤖 Inteligência Artificial</div>
         <div class="skill-card">🌐 Web Apps</div>
+        <div class="skill-card">💼 SaaS</div>
       </div>
     </div>
   </section>
@@ -80,9 +82,9 @@
           <p>Progressive Web Apps que funcionam offline, podem ser instalados e oferecem experiência de app nativo.</p>
         </div>
         <div class="card">
-          <div class="card-icon">🎯</div>
-          <h3>Sites Profissionais</h3>
-          <p>Sites institucionais e portfólios modernos que representam sua marca com qualidade e estilo.</p>
+          <div class="card-icon">🤖</div>
+          <h3>Apps com IA</h3>
+          <p>Aplicações inteligentes com assistentes virtuais, automações e recursos de inteligência artificial.</p>
         </div>
       </div>
     </div>
@@ -93,37 +95,198 @@
     <div class="container">
       <span class="section-tag">Meu trabalho</span>
       <h2>Projetos em <span>Destaque</span></h2>
+
+      <!-- FILTROS -->
+      <div class="filtros">
+        <button class="filtro-btn active" onclick="filtrar('todos')">Todos</button>
+        <button class="filtro-btn" onclick="filtrar('barbearia')">💈 Barbearias</button>
+        <button class="filtro-btn" onclick="filtrar('saude')">💅 Saúde & Estética</button>
+        <button class="filtro-btn" onclick="filtrar('landing')">🚀 Landing Pages</button>
+        <button class="filtro-btn" onclick="filtrar('ia')">🤖 IA & Ferramentas</button>
+      </div>
+
       <div class="projetos-grid">
-        <div class="projeto-card">
-          <div class="projeto-img" style="background: linear-gradient(135deg, #6C63FF, #e040fb);">
-            <span>01</span>
+
+        <!-- BARBEARIAS -->
+        <div class="projeto-card" data-cat="barbearia">
+          <div class="projeto-img" style="background: linear-gradient(135deg, #1a1a2e, #e94560);">
+            <span>✂️</span>
           </div>
           <div class="projeto-info">
-            <h3>Landing Page — Projeto 1</h3>
-            <p>Descrição do projeto. Adicione detalhes aqui.</p>
-            <a href="#" class="btn-small">Ver Projeto →</a>
+            <span class="projeto-tag">💈 Barbearia</span>
+            <h3>Dom Corte Barbearia Premium</h3>
+            <p>Refúgio para o homem moderno que não abre mão de estilo, sofisticação e uma experiência de barbearia completa.</p>
           </div>
         </div>
-        <div class="projeto-card">
+
+        <div class="projeto-card" data-cat="barbearia">
           <div class="projeto-img" style="background: linear-gradient(135deg, #f7971e, #ffd200);">
-            <span>02</span>
+            <span>⚡</span>
           </div>
           <div class="projeto-info">
-            <h3>PWA App — Projeto 2</h3>
-            <p>Descrição do projeto. Adicione detalhes aqui.</p>
-            <a href="#" class="btn-small">Ver Projeto →</a>
+            <span class="projeto-tag">💈 Barbearia</span>
+            <h3>Velar Barber Club</h3>
+            <p>Plataforma completa para gerenciar barbearias — agendamentos, clientes, equipe e finanças.</p>
           </div>
         </div>
-        <div class="projeto-card">
+
+        <div class="projeto-card" data-cat="barbearia">
+          <div class="projeto-img" style="background: linear-gradient(135deg, #232526, #414345);">
+            <span>🪒</span>
+          </div>
+          <div class="projeto-info">
+            <span class="projeto-tag">💈 Barbearia</span>
+            <h3>Barbearia do Johnn</h3>
+            <p>Sistema moderno com agendamento online, controle de agenda, fila, fidelização e painel administrativo.</p>
+          </div>
+        </div>
+
+        <!-- SAÚDE & ESTÉTICA -->
+        <div class="projeto-card" data-cat="saude">
+          <div class="projeto-img" style="background: linear-gradient(135deg, #c471ed, #f64f59);">
+            <span>✨</span>
+          </div>
+          <div class="projeto-info">
+            <span class="projeto-tag">💅 Saúde & Estética</span>
+            <h3>Clínica Aura</h3>
+            <p>Experiência de estética avançada que une ciência, luxo e cuidado personalizado para realçar a beleza natural.</p>
+          </div>
+        </div>
+
+        <div class="projeto-card" data-cat="saude">
           <div class="projeto-img" style="background: linear-gradient(135deg, #11998e, #38ef7d);">
-            <span>03</span>
+            <span>🌿</span>
           </div>
           <div class="projeto-info">
-            <h3>Site Institucional — Projeto 3</h3>
-            <p>Descrição do projeto. Adicione detalhes aqui.</p>
-            <a href="#" class="btn-small">Ver Projeto →</a>
+            <span class="projeto-tag">💅 Saúde & Estética</span>
+            <h3>Aureum Health</h3>
+            <p>Consultoria médica boutique com otimização de saúde personalizada e de alto padrão.</p>
           </div>
         </div>
+
+        <div class="projeto-card" data-cat="saude">
+          <div class="projeto-img" style="background: linear-gradient(135deg, #e040fb, #7c4dff);">
+            <span>🌸</span>
+          </div>
+          <div class="projeto-info">
+            <span class="projeto-tag">💅 Saúde & Estética</span>
+            <h3>Dra. Tarma Keullin</h3>
+            <p>Plataforma de atendimento em saúde e estética íntima feminina, focada em bem-estar e acolhimento humanizado.</p>
+          </div>
+        </div>
+
+        <div class="projeto-card" data-cat="saude">
+          <div class="projeto-img" style="background: linear-gradient(135deg, #a18cd1, #fbc2eb);">
+            <span>👩‍⚕️</span>
+          </div>
+          <div class="projeto-info">
+            <span class="projeto-tag">💅 Saúde & Estética</span>
+            <h3>Clínica Dra. Juliana Albuquerque</h3>
+            <p>Clínica ginecológica moderna e sofisticada, especializada em saúde íntima feminina e estética íntima.</p>
+          </div>
+        </div>
+
+        <!-- LANDING PAGES -->
+        <div class="projeto-card" data-cat="landing">
+          <div class="projeto-img" style="background: linear-gradient(135deg, #f7971e, #FFD200);">
+            <span>☀️</span>
+          </div>
+          <div class="projeto-info">
+            <span class="projeto-tag">🚀 Landing Page</span>
+            <h3>SolarMax</h3>
+            <p>Landing page de alta conversão para transformar visitantes em clientes de energia solar.</p>
+          </div>
+        </div>
+
+        <div class="projeto-card" data-cat="landing">
+          <div class="projeto-img" style="background: linear-gradient(135deg, #6C63FF, #48c6ef);">
+            <span>📄</span>
+          </div>
+          <div class="projeto-info">
+            <span class="projeto-tag">🚀 Landing Page</span>
+            <h3>LandingExpress</h3>
+            <p>Criação de landing pages profissionais e estratégicas focadas em conversão via WhatsApp.</p>
+          </div>
+        </div>
+
+        <div class="projeto-card" data-cat="landing">
+          <div class="projeto-img" style="background: linear-gradient(135deg, #f953c6, #b91d73);">
+            <span>📈</span>
+          </div>
+          <div class="projeto-info">
+            <span class="projeto-tag">🚀 Landing Page</span>
+            <h3>Método 5D PRO</h3>
+            <p>Landing page para curso intensivo de tráfego pago — do básico ao avançado em 5 dias.</p>
+          </div>
+        </div>
+
+        <div class="projeto-card" data-cat="landing">
+          <div class="projeto-img" style="background: linear-gradient(135deg, #134e5e, #71b280);">
+            <span>🚗</span>
+          </div>
+          <div class="projeto-info">
+            <span class="projeto-tag">🚀 Landing Page</span>
+            <h3>Controle Veicular</h3>
+            <p>Sistema para registrar saída e retorno de veículos corporativos, otimizado para mobile.</p>
+          </div>
+        </div>
+
+        <div class="projeto-card" data-cat="landing">
+          <div class="projeto-img" style="background: linear-gradient(135deg, #373B44, #4286f4);">
+            <span>🎖️</span>
+          </div>
+          <div class="projeto-info">
+            <span class="projeto-tag">🚀 Landing Page</span>
+            <h3>Sons Of Brasil</h3>
+            <p>Sistema centralizado para gerenciamento tático de tropas, estatísticas de combate e organização de defesas.</p>
+          </div>
+        </div>
+
+        <!-- IA & FERRAMENTAS -->
+        <div class="projeto-card" data-cat="ia">
+          <div class="projeto-img" style="background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);">
+            <span>🤖</span>
+          </div>
+          <div class="projeto-info">
+            <span class="projeto-tag">🤖 IA & Ferramentas</span>
+            <h3>Zick</h3>
+            <p>Assistente pessoal inteligente para gerenciar tarefas, agenda, notas e conversas com IA.</p>
+          </div>
+        </div>
+
+        <div class="projeto-card" data-cat="ia">
+          <div class="projeto-img" style="background: linear-gradient(135deg, #00b4db, #0083b0);">
+            <span>⚡</span>
+          </div>
+          <div class="projeto-info">
+            <span class="projeto-tag">🤖 IA & Ferramentas</span>
+            <h3>Kronos AI</h3>
+            <p>Assistente pessoal de alta performance com gestão de tarefas, automações e interface neon imersiva.</p>
+          </div>
+        </div>
+
+        <div class="projeto-card" data-cat="ia">
+          <div class="projeto-img" style="background: linear-gradient(135deg, #1D976C, #93F9B9);">
+            <span>📝</span>
+          </div>
+          <div class="projeto-info">
+            <span class="projeto-tag">🤖 IA & Ferramentas</span>
+            <h3>Currículo IA</h3>
+            <p>Crie currículos profissionais com ajuda de IA, adaptados para vagas específicas com download em PDF.</p>
+          </div>
+        </div>
+
+        <div class="projeto-card" data-cat="ia">
+          <div class="projeto-img" style="background: linear-gradient(135deg, #4776E6, #8E54E9);">
+            <span>🎓</span>
+          </div>
+          <div class="projeto-info">
+            <span class="projeto-tag">🤖 IA & Ferramentas</span>
+            <h3>IA Masterclass</h3>
+            <p>Plataforma de curso completo sobre Inteligência Artificial — do básico ao avançado.</p>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
