@@ -1,15 +1,24 @@
 // Menu mobile
 function toggleMenu() {
-  const nav = document.querySelector('.nav-links');
-  nav.classList.toggle('open');
+  document.querySelector('.nav-links').classList.toggle('open');
 }
-
-// Fechar menu ao clicar em link
 document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => {
-    document.querySelector('.nav-links').classList.remove('open');
-  });
+  link.addEventListener('click', () => document.querySelector('.nav-links').classList.remove('open'));
 });
+
+// Filtro de projetos
+function filtrar(cat) {
+  document.querySelectorAll('.filtro-btn').forEach(btn => btn.classList.remove('active'));
+  event.target.classList.add('active');
+
+  document.querySelectorAll('.projeto-card').forEach(card => {
+    if (cat === 'todos' || card.dataset.cat === cat) {
+      card.classList.remove('hidden');
+    } else {
+      card.classList.add('hidden');
+    }
+  });
+}
 
 // Formulário de contato
 function enviarForm(e) {
@@ -24,7 +33,7 @@ function enviarForm(e) {
   }, 3000);
 }
 
-// Animação de entrada suave nos elementos
+// Animação de entrada suave
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
