@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#6C63FF" />
+  <meta name="description" content="Portfólio de Welber Júnior — Landing Pages & PWAs" />
+  <title>Welber Júnior | Portfólio</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="nav-logo">WJ<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <p class="hero-tag">👋 Olá, eu sou</p>
+      <h1>Welber<br /><span>Júnior</span></h1>
+      <p class="hero-sub">Criador de <strong>Landing Pages</strong> e <strong>Aplicativos PWA</strong> que convertem e encantam.</p>
+      <div class="hero-btns">
+        <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+        <a href="#contato" class="btn btn-outline">Fale Comigo</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="img-ring">
+        <img src="https://media.base44.com/images/public/69c93be813c29181fcfd07d5/9a58960c6_WhatsAppImage2026-03-06at111916.jpg" alt="Welber Júnior" />
+      </div>
+      <div class="blob blob1"></div>
+      <div class="blob blob2"></div>
+    </div>
+    <div class="scroll-hint">↓</div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <span class="section-tag">Quem sou eu</span>
+      <h2>Sobre <span>Mim</span></h2>
+      <p>Sou desenvolvedor NoCode especializado em criar experiências digitais modernas, rápidas e eficientes. Transformo ideias em produtos reais — de landing pages de alta conversão a aplicativos PWA que funcionam offline e parecem apps nativos.</p>
+      <div class="skills-grid">
+        <div class="skill-card">🎨 UI/UX Design</div>
+        <div class="skill-card">⚡ PWA</div>
+        <div class="skill-card">📱 Mobile First</div>
+        <div class="skill-card">🚀 Landing Pages</div>
+        <div class="skill-card">🔧 NoCode Tools</div>
+        <div class="skill-card">🌐 Web Apps</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section class="servicos" id="servicos">
+    <div class="container">
+      <span class="section-tag">O que eu faço</span>
+      <h2>Meus <span>Serviços</span></h2>
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon">🚀</div>
+          <h3>Landing Pages</h3>
+          <p>Páginas de alta conversão, rápidas, responsivas e com foco total em resultados para seu negócio.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📱</div>
+          <h3>Aplicativos PWA</h3>
+          <p>Progressive Web Apps que funcionam offline, podem ser instalados e oferecem experiência de app nativo.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🎯</div>
+          <h3>Sites Profissionais</h3>
+          <p>Sites institucionais e portfólios modernos que representam sua marca com qualidade e estilo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section class="projetos" id="projetos">
+    <div class="container">
+      <span class="section-tag">Meu trabalho</span>
+      <h2>Projetos em <span>Destaque</span></h2>
+      <div class="projetos-grid">
+        <div class="projeto-card">
+          <div class="projeto-img" style="background: linear-gradient(135deg, #6C63FF, #e040fb);">
+            <span>01</span>
+          </div>
+          <div class="projeto-info">
+            <h3>Landing Page — Projeto 1</h3>
+            <p>Descrição do projeto. Adicione detalhes aqui.</p>
+            <a href="#" class="btn-small">Ver Projeto →</a>
+          </div>
+        </div>
+        <div class="projeto-card">
+          <div class="projeto-img" style="background: linear-gradient(135deg, #f7971e, #ffd200);">
+            <span>02</span>
+          </div>
+          <div class="projeto-info">
+            <h3>PWA App — Projeto 2</h3>
+            <p>Descrição do projeto. Adicione detalhes aqui.</p>
+            <a href="#" class="btn-small">Ver Projeto →</a>
+          </div>
+        </div>
+        <div class="projeto-card">
+          <div class="projeto-img" style="background: linear-gradient(135deg, #11998e, #38ef7d);">
+            <span>03</span>
+          </div>
+          <div class="projeto-info">
+            <h3>Site Institucional — Projeto 3</h3>
+            <p>Descrição do projeto. Adicione detalhes aqui.</p>
+            <a href="#" class="btn-small">Ver Projeto →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="contato" id="contato">
+    <div class="container">
+      <span class="section-tag">Bora conversar?</span>
+      <h2>Entre em <span>Contato</span></h2>
+      <form class="form-contato" onsubmit="enviarForm(event)">
+        <div class="form-row">
+          <input type="text" placeholder="Seu nome" required />
+          <input type="email" placeholder="Seu e-mail" required />
+        </div>
+        <input type="text" placeholder="Assunto" required />
+        <textarea placeholder="Sua mensagem..." rows="5" required></textarea>
+        <button type="submit" class="btn btn-primary">Enviar Mensagem 🚀</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>Feito com 💜 por <strong>Welber Júnior</strong> · 2026</p>
+    <div class="social-links">
+      <a href="https://github.com/welberjr" target="_blank">GitHub</a>
+      <a href="#" target="_blank">LinkedIn</a>
+      <a href="#" target="_blank">Instagram</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
