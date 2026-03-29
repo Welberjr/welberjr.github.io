@@ -1,0 +1,16 @@
+{
+  "name": "Welber Júnior — Portfólio",
+  "short_name": "WelberJr",
+  "description": "Landing Pages & PWAs por Welber Júnior",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f0f1a",
+  "theme_color": "#6C63FF",
+  "icons": [
+    {
+      "src": "https://media.base44.com/images/public/69c93be813c29181fcfd07d5/9a58960c6_WhatsAppImage2026-03-06at111916.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
