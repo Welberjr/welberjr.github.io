@@ -98,74 +98,90 @@
 
       <!-- FILTROS -->
       <div class="filtros">
-        <button class="filtro-btn active" onclick="filtrar('todos')">Todos</button>
-        <button class="filtro-btn" onclick="filtrar('barbearia')">💈 Barbearias</button>
-        <button class="filtro-btn" onclick="filtrar('saude')">💅 Saúde & Estética</button>
-        <button class="filtro-btn" onclick="filtrar('landing')">🚀 Landing Pages</button>
-        <button class="filtro-btn" onclick="filtrar('ia')">🤖 IA & Ferramentas</button>
+        <button class="filtro-btn active" onclick="filtrar('todos', event)">Todos</button>
+        <button class="filtro-btn" onclick="filtrar('barbearia', event)">💈 Barbearias</button>
+        <button class="filtro-btn" onclick="filtrar('saude', event)">💅 Saúde & Estética</button>
+        <button class="filtro-btn" onclick="filtrar('landing', event)">🚀 Landing Pages</button>
+        <button class="filtro-btn" onclick="filtrar('ia', event)">🤖 IA & Ferramentas</button>
       </div>
 
       <div class="projetos-grid">
 
         <!-- BARBEARIAS -->
         <div class="projeto-card" data-cat="barbearia">
-          <div class="projeto-img" style="background: linear-gradient(135deg, #1a1a2e, #e94560);">
-            <span>✂️</span>
-          </div>
-          <div class="projeto-info">
-            <span class="projeto-tag">💈 Barbearia</span>
-            <h3>Dom Corte Barbearia Premium</h3>
-            <p>Refúgio para o homem moderno que não abre mão de estilo, sofisticação e uma experiência de barbearia completa.</p>
-          </div>
+          <a href="https://domcorte.base44.app" target="_blank" class="projeto-link">
+            <div class="projeto-img">
+              <img src="https://media.base44.com/images/public/69c93be813c29181fcfd07d5/9404fb128_DomCorteBarbearia.png" alt="Dom Corte Barbearia Premium" />
+            </div>
+            <div class="projeto-info">
+              <span class="projeto-tag">💈 Barbearia</span>
+              <h3>Dom Corte Barbearia Premium</h3>
+              <p>Refúgio para o homem moderno que não abre mão de estilo, sofisticação e uma experiência de barbearia completa.</p>
+              <span class="projeto-ver">Ver projeto →</span>
+            </div>
+          </a>
         </div>
 
         <div class="projeto-card" data-cat="barbearia">
-          <div class="projeto-img" style="background: linear-gradient(135deg, #f7971e, #ffd200);">
-            <span>⚡</span>
-          </div>
-          <div class="projeto-info">
-            <span class="projeto-tag">💈 Barbearia</span>
-            <h3>Velar Barber Club</h3>
-            <p>Plataforma completa para gerenciar barbearias — agendamentos, clientes, equipe e finanças.</p>
-          </div>
+          <a href="https://velarbarberclub.com" target="_blank" class="projeto-link">
+            <div class="projeto-img">
+              <img src="https://media.base44.com/images/public/69c93be813c29181fcfd07d5/03ad3a9a2_VelarBarberClub.png" alt="Velar Barber Club" />
+            </div>
+            <div class="projeto-info">
+              <span class="projeto-tag">💈 Barbearia</span>
+              <h3>Velar Barber Club</h3>
+              <p>Plataforma completa para gerenciar barbearias — agendamentos, clientes, equipe e finanças.</p>
+              <span class="projeto-ver">Ver projeto →</span>
+            </div>
+          </a>
         </div>
 
         <div class="projeto-card" data-cat="barbearia">
-          <div class="projeto-img" style="background: linear-gradient(135deg, #232526, #414345);">
-            <span>🪒</span>
-          </div>
-          <div class="projeto-info">
-            <span class="projeto-tag">💈 Barbearia</span>
-            <h3>Barbearia do Johnn</h3>
-            <p>Sistema moderno com agendamento online, controle de agenda, fila, fidelização e painel administrativo.</p>
-          </div>
+          <a href="https://barbeariadojhonn.base44.app" target="_blank" class="projeto-link">
+            <div class="projeto-img">
+              <img src="https://media.base44.com/images/public/69c93be813c29181fcfd07d5/4e2527a99_BarbeariadoJhonn.png" alt="Barbearia do Johnn" />
+            </div>
+            <div class="projeto-info">
+              <span class="projeto-tag">💈 Barbearia</span>
+              <h3>Barbearia do Johnn</h3>
+              <p>Sistema moderno com agendamento online, controle de agenda, fila, fidelização e painel administrativo.</p>
+              <span class="projeto-ver">Ver projeto →</span>
+            </div>
+          </a>
         </div>
 
         <!-- SAÚDE & ESTÉTICA -->
         <div class="projeto-card" data-cat="saude">
-          <div class="projeto-img" style="background: linear-gradient(135deg, #c471ed, #f64f59);">
-            <span>✨</span>
-          </div>
-          <div class="projeto-info">
-            <span class="projeto-tag">💅 Saúde & Estética</span>
-            <h3>Clínica Aura</h3>
-            <p>Experiência de estética avançada que une ciência, luxo e cuidado personalizado para realçar a beleza natural.</p>
-          </div>
+          <a href="https://clinicaaura.base44.app" target="_blank" class="projeto-link">
+            <div class="projeto-img">
+              <img src="https://media.base44.com/images/public/69c93be813c29181fcfd07d5/472119004_ClinicaAura.png" alt="Clínica Aura" />
+            </div>
+            <div class="projeto-info">
+              <span class="projeto-tag">💅 Saúde & Estética</span>
+              <h3>Clínica Aura</h3>
+              <p>Experiência de estética avançada que une ciência, luxo e cuidado personalizado para realçar a beleza natural.</p>
+              <span class="projeto-ver">Ver projeto →</span>
+            </div>
+          </a>
         </div>
 
         <div class="projeto-card" data-cat="saude">
-          <div class="projeto-img" style="background: linear-gradient(135deg, #11998e, #38ef7d);">
-            <span>🌿</span>
-          </div>
-          <div class="projeto-info">
-            <span class="projeto-tag">💅 Saúde & Estética</span>
-            <h3>Aureum Health</h3>
-            <p>Consultoria médica boutique com otimização de saúde personalizada e de alto padrão.</p>
-          </div>
+          <a href="https://clinicaeleve.base44.app" target="_blank" class="projeto-link">
+            <div class="projeto-img">
+              <img src="https://media.base44.com/images/public/69c93be813c29181fcfd07d5/d27edebf4_ClinicaEleven.png" alt="Aureum Health" />
+            </div>
+            <div class="projeto-info">
+              <span class="projeto-tag">💅 Saúde & Estética</span>
+              <h3>Aureum Health</h3>
+              <p>Consultoria médica boutique com otimização de saúde personalizada e de alto padrão.</p>
+              <span class="projeto-ver">Ver projeto →</span>
+            </div>
+          </a>
         </div>
 
+        <!-- SAÚDE - SEM IMAGEM AINDA -->
         <div class="projeto-card" data-cat="saude">
-          <div class="projeto-img" style="background: linear-gradient(135deg, #e040fb, #7c4dff);">
+          <div class="projeto-img placeholder" style="background: linear-gradient(135deg, #e040fb, #7c4dff);">
             <span>🌸</span>
           </div>
           <div class="projeto-info">
@@ -176,7 +192,7 @@
         </div>
 
         <div class="projeto-card" data-cat="saude">
-          <div class="projeto-img" style="background: linear-gradient(135deg, #a18cd1, #fbc2eb);">
+          <div class="projeto-img placeholder" style="background: linear-gradient(135deg, #a18cd1, #fbc2eb);">
             <span>👩‍⚕️</span>
           </div>
           <div class="projeto-info">
@@ -188,29 +204,36 @@
 
         <!-- LANDING PAGES -->
         <div class="projeto-card" data-cat="landing">
-          <div class="projeto-img" style="background: linear-gradient(135deg, #f7971e, #FFD200);">
-            <span>☀️</span>
-          </div>
-          <div class="projeto-info">
-            <span class="projeto-tag">🚀 Landing Page</span>
-            <h3>SolarMax</h3>
-            <p>Landing page de alta conversão para transformar visitantes em clientes de energia solar.</p>
-          </div>
+          <a href="https://solarmax.base44.app" target="_blank" class="projeto-link">
+            <div class="projeto-img">
+              <img src="https://media.base44.com/images/public/69c93be813c29181fcfd07d5/663644d1b_SolarMax.png" alt="SolarMax" />
+            </div>
+            <div class="projeto-info">
+              <span class="projeto-tag">🚀 Landing Page</span>
+              <h3>SolarMax</h3>
+              <p>Landing page de alta conversão para transformar visitantes em clientes de energia solar.</p>
+              <span class="projeto-ver">Ver projeto →</span>
+            </div>
+          </a>
         </div>
 
         <div class="projeto-card" data-cat="landing">
-          <div class="projeto-img" style="background: linear-gradient(135deg, #6C63FF, #48c6ef);">
-            <span>📄</span>
-          </div>
-          <div class="projeto-info">
-            <span class="projeto-tag">🚀 Landing Page</span>
-            <h3>LandingExpress</h3>
-            <p>Criação de landing pages profissionais e estratégicas focadas em conversão via WhatsApp.</p>
-          </div>
+          <a href="https://landingexpress.org" target="_blank" class="projeto-link">
+            <div class="projeto-img">
+              <img src="https://media.base44.com/images/public/69c93be813c29181fcfd07d5/a19ac23a5_LandingExpress.png" alt="LandingExpress" />
+            </div>
+            <div class="projeto-info">
+              <span class="projeto-tag">🚀 Landing Page</span>
+              <h3>LandingExpress</h3>
+              <p>Criação de landing pages profissionais e estratégicas focadas em conversão via WhatsApp.</p>
+              <span class="projeto-ver">Ver projeto →</span>
+            </div>
+          </a>
         </div>
 
+        <!-- LANDING - SEM IMAGEM AINDA -->
         <div class="projeto-card" data-cat="landing">
-          <div class="projeto-img" style="background: linear-gradient(135deg, #f953c6, #b91d73);">
+          <div class="projeto-img placeholder" style="background: linear-gradient(135deg, #f953c6, #b91d73);">
             <span>📈</span>
           </div>
           <div class="projeto-info">
@@ -221,7 +244,7 @@
         </div>
 
         <div class="projeto-card" data-cat="landing">
-          <div class="projeto-img" style="background: linear-gradient(135deg, #134e5e, #71b280);">
+          <div class="projeto-img placeholder" style="background: linear-gradient(135deg, #134e5e, #71b280);">
             <span>🚗</span>
           </div>
           <div class="projeto-info">
@@ -232,7 +255,7 @@
         </div>
 
         <div class="projeto-card" data-cat="landing">
-          <div class="projeto-img" style="background: linear-gradient(135deg, #373B44, #4286f4);">
+          <div class="projeto-img placeholder" style="background: linear-gradient(135deg, #373B44, #4286f4);">
             <span>🎖️</span>
           </div>
           <div class="projeto-info">
@@ -244,18 +267,22 @@
 
         <!-- IA & FERRAMENTAS -->
         <div class="projeto-card" data-cat="ia">
-          <div class="projeto-img" style="background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);">
-            <span>🤖</span>
-          </div>
-          <div class="projeto-info">
-            <span class="projeto-tag">🤖 IA & Ferramentas</span>
-            <h3>Zick</h3>
-            <p>Assistente pessoal inteligente para gerenciar tarefas, agenda, notas e conversas com IA.</p>
-          </div>
+          <a href="https://newzick.base44.app" target="_blank" class="projeto-link">
+            <div class="projeto-img">
+              <img src="https://media.base44.com/images/public/69c93be813c29181fcfd07d5/1f43e52ea_zick.png" alt="Zick" />
+            </div>
+            <div class="projeto-info">
+              <span class="projeto-tag">🤖 IA & Ferramentas</span>
+              <h3>Zick</h3>
+              <p>Assistente pessoal inteligente para gerenciar tarefas, agenda, notas e conversas com IA.</p>
+              <span class="projeto-ver">Ver projeto →</span>
+            </div>
+          </a>
         </div>
 
+        <!-- IA - SEM IMAGEM AINDA -->
         <div class="projeto-card" data-cat="ia">
-          <div class="projeto-img" style="background: linear-gradient(135deg, #00b4db, #0083b0);">
+          <div class="projeto-img placeholder" style="background: linear-gradient(135deg, #00b4db, #0083b0);">
             <span>⚡</span>
           </div>
           <div class="projeto-info">
@@ -266,7 +293,7 @@
         </div>
 
         <div class="projeto-card" data-cat="ia">
-          <div class="projeto-img" style="background: linear-gradient(135deg, #1D976C, #93F9B9);">
+          <div class="projeto-img placeholder" style="background: linear-gradient(135deg, #1D976C, #93F9B9);">
             <span>📝</span>
           </div>
           <div class="projeto-info">
@@ -277,7 +304,7 @@
         </div>
 
         <div class="projeto-card" data-cat="ia">
-          <div class="projeto-img" style="background: linear-gradient(135deg, #4776E6, #8E54E9);">
+          <div class="projeto-img placeholder" style="background: linear-gradient(135deg, #4776E6, #8E54E9);">
             <span>🎓</span>
           </div>
           <div class="projeto-info">
