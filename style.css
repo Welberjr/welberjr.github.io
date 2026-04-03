@@ -336,8 +336,8 @@ section h2 span { background: var(--gradient); -webkit-background-clip: text; -w
 .projeto-card:hover .projeto-ver { transform: translateX(6px); }
 
 /* ===== CONTATO ===== */
-.contato { background: var(--dark3); }
-.form-contato { max-width: 680px; margin-top: 48px; display: flex; flex-direction: column; gap: 16px; }
+.contato { background: var(--dark3); text-align: center; }
+.form-contato { max-width: 680px; margin-top: 48px; margin-left: auto; margin-right: auto; display: flex; flex-direction: column; gap: 16px; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 
 .form-contato input,
@@ -355,7 +355,7 @@ section h2 span { background: var(--gradient); -webkit-background-clip: text; -w
 
 /* Links de contato rápido */
 .contato-links {
-  display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 40px; margin-top: 8px;
+  display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 40px; margin-top: 8px; justify-content: center;
 }
 .contato-link {
   display: flex; align-items: center; gap: 10px;
