@@ -14,9 +14,9 @@
 <body>
 
   <!-- NAV -->
-  <nav class="navbar">
+  <nav class="navbar" id="navbar">
     <div class="nav-logo">WJ<span>.</span></div>
-    <ul class="nav-links">
+    <ul class="nav-links" id="navLinks">
       <li><a href="#sobre">Sobre</a></li>
       <li><a href="#servicos">Serviços</a></li>
       <li><a href="#projetos">Projetos</a></li>
@@ -31,19 +31,75 @@
       <p class="hero-tag">👋 Olá, eu sou</p>
       <h1>Welber<br /><span>Júnior</span></h1>
       <p class="hero-sub">Criador de <strong>Landing Pages</strong> e <strong>Aplicativos PWA</strong> que convertem e encantam.</p>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <span class="hero-stat-num">15+</span>
+          <span class="hero-stat-label">Projetos entregues</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">4</span>
+          <span class="hero-stat-label">Domínios próprios</span>
+        </div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">100%</span>
+          <span class="hero-stat-label">NoCode & IA</span>
+        </div>
+      </div>
+
       <div class="hero-btns">
         <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
-        <a href="#contato" class="btn btn-outline">Fale Comigo</a>
+        <a href="https://wa.me/5561982920444" target="_blank" class="btn btn-outline">💬 Fale Comigo</a>
+      </div>
+
+      <div class="hero-badges">
+        <span class="hero-badge">⚡ Base44</span>
+        <span class="hero-badge">📱 PWA</span>
+        <span class="hero-badge">🤖 IA</span>
+        <span class="hero-badge">🚀 Landing Pages</span>
+        <span class="hero-badge">🎨 UI/UX</span>
       </div>
     </div>
+
     <div class="hero-image">
       <div class="img-ring">
         <img src="https://media.base44.com/images/public/69c93be813c29181fcfd07d5/9a58960c6_WhatsAppImage2026-03-06at111916.jpg" alt="Welber Júnior" />
       </div>
+      <div class="float-badge float-badge-1">🚀 15+ projetos</div>
+      <div class="float-badge float-badge-2">✅ Entrega rápida</div>
+      <div class="float-badge float-badge-3">🤖 Apps com IA</div>
       <div class="blob blob1"></div>
       <div class="blob blob2"></div>
     </div>
     <div class="scroll-hint">↓</div>
+  </section>
+
+  <!-- CONTADORES -->
+  <section class="counters">
+    <div class="container">
+      <div class="counters-grid">
+        <div class="counter-item fade-in">
+          <span class="counter-icon">🚀</span>
+          <span class="counter-num" data-target="15">0</span>
+          <span class="counter-label">Projetos Entregues</span>
+        </div>
+        <div class="counter-item fade-in">
+          <span class="counter-icon">🌐</span>
+          <span class="counter-num" data-target="4">0</span>
+          <span class="counter-label">Domínios Próprios</span>
+        </div>
+        <div class="counter-item fade-in">
+          <span class="counter-icon">💅</span>
+          <span class="counter-num" data-target="4">0</span>
+          <span class="counter-label">Clínicas & Saúde</span>
+        </div>
+        <div class="counter-item fade-in">
+          <span class="counter-icon">🤖</span>
+          <span class="counter-num" data-target="4">0</span>
+          <span class="counter-label">Apps com IA</span>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- SOBRE -->
@@ -71,17 +127,17 @@
       <span class="section-tag">O que eu faço</span>
       <h2>Meus <span>Serviços</span></h2>
       <div class="cards-grid">
-        <div class="card">
+        <div class="card fade-in">
           <div class="card-icon">🚀</div>
           <h3>Landing Pages</h3>
           <p>Páginas de alta conversão, rápidas, responsivas e com foco total em resultados para seu negócio.</p>
         </div>
-        <div class="card">
+        <div class="card fade-in">
           <div class="card-icon">📱</div>
           <h3>Aplicativos PWA</h3>
           <p>Progressive Web Apps que funcionam offline, podem ser instalados e oferecem experiência de app nativo.</p>
         </div>
-        <div class="card">
+        <div class="card fade-in">
           <div class="card-icon">🤖</div>
           <h3>Apps com IA</h3>
           <p>Aplicações inteligentes com assistentes virtuais, automações e recursos de inteligência artificial.</p>
@@ -107,7 +163,7 @@
       <div class="projetos-grid">
 
         <!-- BARBEARIAS -->
-        <div class="projeto-card" data-cat="barbearia">
+        <div class="projeto-card fade-in" data-cat="barbearia">
           <a href="https://domcorte.base44.app" target="_blank" class="projeto-link">
             <div class="projeto-img">
               <img src="https://media.base44.com/images/public/69c93be813c29181fcfd07d5/9404fb128_DomCorteBarbearia.png" alt="Dom Corte Barbearia Premium" />
@@ -121,7 +177,7 @@
           </a>
         </div>
 
-        <div class="projeto-card" data-cat="barbearia">
+        <div class="projeto-card fade-in" data-cat="barbearia">
           <a href="https://velarbarberclub.com" target="_blank" class="projeto-link">
             <div class="projeto-img">
               <img src="https://media.base44.com/images/public/69c93be813c29181fcfd07d5/03ad3a9a2_VelarBarberClub.png" alt="Velar Barber Club" />
@@ -135,7 +191,7 @@
           </a>
         </div>
 
-        <div class="projeto-card" data-cat="barbearia">
+        <div class="projeto-card fade-in" data-cat="barbearia">
           <a href="https://barbeariadojhonn.base44.app" target="_blank" class="projeto-link">
             <div class="projeto-img">
               <img src="https://media.base44.com/images/public/69c93be813c29181fcfd07d5/4e2527a99_BarbeariadoJhonn.png" alt="Barbearia do Johnn" />
@@ -150,7 +206,7 @@
         </div>
 
         <!-- SAÚDE & ESTÉTICA -->
-        <div class="projeto-card" data-cat="saude">
+        <div class="projeto-card fade-in" data-cat="saude">
           <a href="https://clinicaaura.base44.app" target="_blank" class="projeto-link">
             <div class="projeto-img">
               <img src="https://media.base44.com/images/public/69c93be813c29181fcfd07d5/472119004_ClinicaAura.png" alt="Clínica Aura" />
@@ -164,7 +220,7 @@
           </a>
         </div>
 
-        <div class="projeto-card" data-cat="saude">
+        <div class="projeto-card fade-in" data-cat="saude">
           <a href="https://clinicaeleve.base44.app" target="_blank" class="projeto-link">
             <div class="projeto-img">
               <img src="https://media.base44.com/images/public/69c93be813c29181fcfd07d5/d27edebf4_ClinicaEleven.png" alt="Aureum Health" />
@@ -178,7 +234,7 @@
           </a>
         </div>
 
-        <div class="projeto-card" data-cat="saude">
+        <div class="projeto-card fade-in" data-cat="saude">
           <a href="https://tarmakeullin.base44.app" target="_blank" class="projeto-link">
             <div class="projeto-img">
               <img src="https://media.base44.com/images/public/69c93be813c29181fcfd07d5/84a8f77da_image.png" alt="Dra. Tarma Keullin" />
@@ -192,7 +248,7 @@
           </a>
         </div>
 
-        <div class="projeto-card" data-cat="saude">
+        <div class="projeto-card fade-in" data-cat="saude">
           <a href="https://juliana-intimate-care.base44.app" target="_blank" class="projeto-link">
             <div class="projeto-img">
               <img src="https://media.base44.com/images/public/69c93be813c29181fcfd07d5/892b39661_image.png" alt="Clínica Dra. Juliana Albuquerque" />
@@ -207,7 +263,7 @@
         </div>
 
         <!-- LANDING PAGES -->
-        <div class="projeto-card" data-cat="landing">
+        <div class="projeto-card fade-in" data-cat="landing">
           <a href="https://solarmax.base44.app" target="_blank" class="projeto-link">
             <div class="projeto-img">
               <img src="https://media.base44.com/images/public/69c93be813c29181fcfd07d5/663644d1b_SolarMax.png" alt="SolarMax" />
@@ -221,7 +277,7 @@
           </a>
         </div>
 
-        <div class="projeto-card" data-cat="landing">
+        <div class="projeto-card fade-in" data-cat="landing">
           <a href="https://landingexpress.org" target="_blank" class="projeto-link">
             <div class="projeto-img">
               <img src="https://media.base44.com/images/public/69c93be813c29181fcfd07d5/a19ac23a5_LandingExpress.png" alt="LandingExpress" />
@@ -235,7 +291,7 @@
           </a>
         </div>
 
-        <div class="projeto-card" data-cat="landing">
+        <div class="projeto-card fade-in" data-cat="landing">
           <a href="https://metodo5dpro.com" target="_blank" class="projeto-link">
             <div class="projeto-img">
               <img src="https://media.base44.com/images/public/69c93be813c29181fcfd07d5/10a0d7910_image.png" alt="Método 5D PRO" />
@@ -249,7 +305,7 @@
           </a>
         </div>
 
-        <div class="projeto-card" data-cat="landing">
+        <div class="projeto-card fade-in" data-cat="landing">
           <a href="https://liderancagrepo.base44.app" target="_blank" class="projeto-link">
             <div class="projeto-img">
               <img src="https://media.base44.com/images/public/69c93be813c29181fcfd07d5/9292698b5_image.png" alt="Sons Of Brasil" />
@@ -264,7 +320,7 @@
         </div>
 
         <!-- IA & FERRAMENTAS -->
-        <div class="projeto-card" data-cat="ia">
+        <div class="projeto-card fade-in" data-cat="ia">
           <a href="https://newzick.base44.app" target="_blank" class="projeto-link">
             <div class="projeto-img">
               <img src="https://media.base44.com/images/public/69c93be813c29181fcfd07d5/1f43e52ea_zick.png" alt="Zick" />
@@ -278,7 +334,7 @@
           </a>
         </div>
 
-        <div class="projeto-card" data-cat="ia">
+        <div class="projeto-card fade-in" data-cat="ia">
           <a href="https://kronosoficial.com.br" target="_blank" class="projeto-link">
             <div class="projeto-img">
               <img src="https://media.base44.com/images/public/69c93be813c29181fcfd07d5/03a4bd6a7_ChatGPTImage18demarde202610_39_05.png" alt="Kronos AI" />
@@ -292,7 +348,7 @@
           </a>
         </div>
 
-        <div class="projeto-card" data-cat="ia">
+        <div class="projeto-card fade-in" data-cat="ia">
           <a href="https://curriculovitae.base44.app" target="_blank" class="projeto-link">
             <div class="projeto-img">
               <img src="https://media.base44.com/images/public/69c93be813c29181fcfd07d5/2d1458042_image.png" alt="Currículo IA" />
@@ -306,7 +362,7 @@
           </a>
         </div>
 
-        <div class="projeto-card" data-cat="ia">
+        <div class="projeto-card fade-in" data-cat="ia">
           <a href="https://iamasterclass.com" target="_blank" class="projeto-link">
             <div class="projeto-img">
               <img src="https://media.base44.com/images/public/69c93be813c29181fcfd07d5/9577a9ee6_image.png" alt="IA Masterclass" />
@@ -329,6 +385,16 @@
     <div class="container">
       <span class="section-tag">Bora conversar?</span>
       <h2>Entre em <span>Contato</span></h2>
+
+      <div class="contato-links">
+        <a href="https://wa.me/5561982920444" target="_blank" class="contato-link wpp">
+          💬 WhatsApp
+        </a>
+        <a href="https://instagram.com/welber_juni0r" target="_blank" class="contato-link insta">
+          📸 Instagram
+        </a>
+      </div>
+
       <form class="form-contato" onsubmit="enviarForm(event)">
         <div class="form-row">
           <input type="text" placeholder="Seu nome" required />
@@ -343,11 +409,16 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <p>Feito com 💜 por <strong>Welber Júnior</strong> · 2026</p>
-    <div class="social-links">
-      <a href="https://github.com/welberjr" target="_blank">GitHub</a>
-      <a href="#" target="_blank">LinkedIn</a>
-      <a href="#" target="_blank">Instagram</a>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">WJ<span>.</span></span>
+        <span class="footer-copy">Feito com 💜 por Welber Júnior · 2026</span>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/welberjr" target="_blank" class="github">🐙 GitHub</a>
+        <a href="https://wa.me/5561982920444" target="_blank" class="wpp">💬 WhatsApp</a>
+        <a href="https://instagram.com/welber_juni0r" target="_blank" class="insta">📸 Instagram</a>
+      </div>
     </div>
   </footer>
 
