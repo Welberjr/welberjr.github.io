@@ -221,7 +221,7 @@ section h2 span { background: var(--gradient); -webkit-background-clip: text; -w
 
 /* ===== SOBRE ===== */
 .sobre { background: var(--dark3); }
-.sobre p { color: var(--text-muted); font-size: 1.05rem; line-height: 1.8; max-width: 680px; margin-bottom: 40px; }
+.sobre p { color: var(--text-muted); font-size: 1.05rem; line-height: 1.8; max-width: 680px; margin-bottom: 40px; text-align: justify; hyphens: none; }
 
 .skills-grid { display: flex; flex-wrap: wrap; gap: 12px; }
 .skill-card {
