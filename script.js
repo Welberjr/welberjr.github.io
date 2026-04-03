@@ -1,14 +1,28 @@
-// Menu mobile
+// ===== MENU MOBILE =====
 function toggleMenu() {
-  document.querySelector('.nav-links').classList.toggle('open');
+  document.getElementById('navLinks').classList.toggle('open');
 }
+
+// Fecha menu ao clicar em link
 document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => document.querySelector('.nav-links').classList.remove('open'));
+  link.addEventListener('click', () => {
+    document.getElementById('navLinks').classList.remove('open');
+  });
 });
 
-// Filtro de projetos
-function filtrar(cat) {
-  document.querySelectorAll('.filtro-btn').forEach(btn => btn.classList.remove('active'));
+// ===== NAVBAR SCROLL =====
+window.addEventListener('scroll', () => {
+  const navbar = document.getElementById('navbar');
+  if (window.scrollY > 60) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+});
+
+// ===== FILTRO DE PROJETOS =====
+function filtrar(cat, event) {
+  document.querySelectorAll('.filtro-btn').forEach(b => b.classList.remove('active'));
   event.target.classList.add('active');
 
   document.querySelectorAll('.projeto-card').forEach(card => {
@@ -20,32 +34,52 @@ function filtrar(cat) {
   });
 }
 
-// Formulário de contato
+// ===== FORM =====
 function enviarForm(e) {
   e.preventDefault();
-  const btn = e.target.querySelector('button[type="submit"]');
-  btn.textContent = '✅ Mensagem enviada!';
-  btn.disabled = true;
-  setTimeout(() => {
-    btn.textContent = 'Enviar Mensagem 🚀';
-    btn.disabled = false;
-    e.target.reset();
-  }, 3000);
+  alert('Mensagem enviada! Em breve entrarei em contato 🚀');
+  e.target.reset();
 }
 
-// Animação de entrada suave
+// ===== FADE IN ON SCROLL =====
+const fadeEls = document.querySelectorAll('.fade-in');
 const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
+  entries.forEach((entry, i) => {
     if (entry.isIntersecting) {
-      entry.target.style.opacity = '1';
-      entry.target.style.transform = 'translateY(0)';
+      setTimeout(() => {
+        entry.target.classList.add('visible');
+      }, i * 80);
+      observer.unobserve(entry.target);
     }
   });
-}, { threshold: 0.1 });
+}, { threshold: 0.12 });
 
-document.querySelectorAll('.card, .projeto-card, .skill-card').forEach(el => {
-  el.style.opacity = '0';
-  el.style.transform = 'translateY(30px)';
-  el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-  observer.observe(el);
-});
+fadeEls.forEach(el => observer.observe(el));
+
+// ===== CONTADOR ANIMADO =====
+function animateCounter(el, target, duration = 1800) {
+  let start = 0;
+  const step = target / (duration / 16);
+  const timer = setInterval(() => {
+    start += step;
+    if (start >= target) {
+      el.textContent = target + (target >= 15 ? '+' : '');
+      clearInterval(timer);
+    } else {
+      el.textContent = Math.floor(start);
+    }
+  }, 16);
+}
+
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const el = entry.target;
+      const target = parseInt(el.dataset.target);
+      animateCounter(el, target);
+      counterObserver.unobserve(el);
+    }
+  });
+}, { threshold: 0.5 });
+
+document.querySelectorAll('.counter-num').forEach(el => counterObserver.observe(el));
