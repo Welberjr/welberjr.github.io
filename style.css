@@ -443,3 +443,65 @@ section h2 span { background: var(--gradient); -webkit-background-clip: text; -w
   position: relative;
   z-index: 2;
 }
+
+/* ===== RESPONSIVO MOBILE COMPLETO ===== */
+@media (max-width: 600px) {
+  /* Base */
+  .container { padding: 0 16px; }
+  section { padding: 60px 0; }
+
+  /* Navbar */
+  .navbar { padding: 14px 16px; }
+  .nav-logo { font-size: 1.4rem; }
+
+  /* Hero */
+  .hero {
+    padding: 90px 16px 50px;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .hero-inner {
+    flex-direction: column-reverse;
+    gap: 32px;
+    align-items: center;
+  }
+  .hero-content h1 { font-size: clamp(2.2rem, 12vw, 3rem); }
+  .hero-content p { font-size: 0.95rem; }
+  .hero-btns { justify-content: center; flex-wrap: wrap; gap: 12px; }
+  .hero-stats { justify-content: center; gap: 20px; flex-wrap: wrap; }
+  .hero-badges { justify-content: center; flex-wrap: wrap; }
+  .img-ring { width: 200px; height: 200px; }
+  .float-badge { display: none; }
+
+  /* Sobre */
+  .sobre p { font-size: 0.95rem; text-align: left; }
+  .skills-grid { justify-content: center; }
+  .skill-card { font-size: 0.85rem; padding: 8px 14px; }
+
+  /* Contadores */
+  .counters-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .counter-value { font-size: 2rem; }
+
+  /* Serviços */
+  .cards-grid { grid-template-columns: 1fr; gap: 16px; }
+  .card { padding: 24px 20px; }
+
+  /* Projetos */
+  .projetos-grid { grid-template-columns: 1fr; gap: 20px; }
+  .filtros { flex-wrap: wrap; justify-content: center; gap: 8px; }
+  .filtro-btn { font-size: 0.8rem; padding: 6px 14px; }
+
+  /* Contato */
+  .contato-links { flex-direction: column; align-items: center; gap: 12px; }
+  .contato-link { width: 100%; justify-content: center; }
+  .form-contato { padding: 0 4px; }
+  .form-row { grid-template-columns: 1fr; }
+  .form-contato input,
+  .form-contato textarea { font-size: 0.95rem; }
+  .btn-submit { font-size: 1rem; padding: 14px; }
+
+  /* Footer */
+  .footer { padding: 32px 16px; }
+  .footer-inner { flex-direction: column; text-align: center; gap: 16px; }
+  .social-links { justify-content: center; flex-wrap: wrap; }
+}
